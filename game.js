@@ -23,7 +23,7 @@ Vue.component('game', {
 				<div class="form-group" v-for="index in 6" :key="index">
 					<input type="text" class="form-control" placeholder="Player initials">
 				</div>
-				
+
 				<button class="btn btn-primary" @click="startGame">Start game</button>
 			</form>
 		</template>

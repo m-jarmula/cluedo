@@ -9,7 +9,7 @@ Vue.component('gametable', {
 	  }
   },
   template: `
-<table class="table table-dark">
+<table class="table table-dark" style="overflow-x:auto;">
 	<thead>
 		<tr>
 			<th>Players:</th>

@@ -32,7 +32,9 @@ Vue.component('tablefieldlabel', {
   template: `
 	<td @click="changeState"
 		class="labelfield"
-		:style="this.currentState == 1 ? {'text-decoration': 'line-through'} : this.currentState == 2 ? {'text-decoration': 'underline'}: {}">
+		:style="this.currentState == 1 ? {'text-decoration': 'line-through'} : this.currentState == 2 ? {'text-decoration': 'underline'}: {}"
+    :class="{ 'red': this.currentState === 1, ' green': this.currentState === 2 }"
+    >
 	{{value}}
 	</td>
   `

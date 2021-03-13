@@ -16,6 +16,7 @@ Vue.component('game', {
   template: `
 	<div class="container">
 		<template v-if="start">
+      <button class="btn btn-primary" onclick="if(confirm('Are you sure you want to restart?')) { window.location.reload() }">Restart</button>
 			<gametable :players="players" v-if="players" />
 		</template>
 		<template v-else>

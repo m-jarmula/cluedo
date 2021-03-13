@@ -16,7 +16,7 @@ Vue.component('tablefield', {
   },
   template: `
 	<td @click="changeState" class="field">
-		<i class="bi" v-bind:class="{ 'bi-x-circle': this.currentState === 1, 'bi-check-circle': this.currentState === 2 }"></i>
+		<i class="bi" v-bind:class="{ 'red bi-x-circle': this.currentState === 1, ' green bi-check-circle': this.currentState === 2 }"></i>
 	</td>
   `
 })

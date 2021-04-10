@@ -10,7 +10,7 @@ Vue.component('gametable', {
   },
   template: `
 <table class="table table-dark" style="overflow-x:auto;">
-	<thead>
+	<thead id="tableHeader">
 		<tr>
 			<th>Players:</th>
 			<th v-for="player in players" :key="player" style="text-align: center"> {{player}}</th>
